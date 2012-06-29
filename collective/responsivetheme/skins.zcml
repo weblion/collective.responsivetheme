@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="collective.responsivetheme">
+
+  <!-- File System Directory Views registration -->
+  <cmf:registerDirectory name="collective_responsivetheme_styles"/>
+
+  <!-- Note: This could also be done for all folders at once
+       by replacing the previous lines with this one:
+  <cmf:registerDirectory name="skins" directory="skins" recursive="True" />
+  -->
+
+</configure>

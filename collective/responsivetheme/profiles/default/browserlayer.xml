@@ -1,0 +1,4 @@
+<layers>
+    <layer name="collective.responsivetheme"
+        interface="collective.responsivetheme.browser.interfaces.IResponsiveTheme" />
+</layers>

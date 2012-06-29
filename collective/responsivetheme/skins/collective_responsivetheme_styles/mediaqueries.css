@@ -1,0 +1,272 @@
+/* For devices with narrow screens, phones, tablets, etc. */
+/*  * 1625px and above huge screens * */
+/*  * 600px and below-common things for 480px, 600px, and below .. IE 9 ignored this if it had 'only screen' in the query   * */
+/*  * iPad in landscape mode * */
+/*  * iPad in portrait mode * */
+/*  * iPhone in landscape mode * */
+/*  * iPhone in portrait mode * */
+
+/*  *  1625px and above huge screens * */
+@media only screen and (min-width : 1625px)  {
+    body { width: 100%;}
+    
+    /* for readability making the width of the site only got to 100em */ 
+    #visual-portal-wrapper {
+        width: 100em !important;
+        margin: 0px auto !important;
+        display: block;
+        float: none;
+    }
+
+} /*  *  END 1625px and above huge screens * */
+
+/*  *  800px and below * */
+@media (max-width : 800px) {
+    div#portal-searchbox {
+        margin-right: 10% !important;
+    }
+}
+
+/*  * 600px and below-common things for 480px, 600px, and below .. IE 9 ignored this if it had 'only screen' in the query * */
+@media (max-width : 610px) {
+    /* reset the min width to be 320px */
+    body { min-width: 320px !important;}
+    #visual-portal-wrapper { width: 100% !important;}
+    div#logo {
+        position: absolute;
+        top: 15px !important;
+        display: inline-block;
+        }
+   #portal-logo {
+       margin-left: 30px;
+       display: inline-block;
+       clear: both;
+       margin: 0px;}
+       
+   #portal-logo img { max-width: 300% !important; height: auto;}
+    /* make width 100% instead of the stock 97.75% */
+    div.width-full {
+        width: 100% !important;
+        }
+        
+    /* start position-0 at absolute left */
+    div.position-0 {
+        margin-left: -100%;
+        }
+
+    /* get rid of whatever width is set on visual-portal-wrapper so it expands whole device width */
+    #visual-portal-wrapper {
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        }
+        
+    /* move columns to below main content */    
+    #portal-column-two, #portal-column-one {
+        clear: both;
+        margin-left: -99% !important;
+        width: 100% !important;
+        margin:1em 0px;
+        width: 95% !important;
+        } 
+        
+    /* spread out the content */
+    div#portal-column-content {
+        width: 94%;
+        margin-left: -99%;
+        }
+        
+    dl#portal-personaltools {
+        margin-right: 34px;
+        float: right;
+        }
+       
+    /* move search box to the center and expand its width */   
+    #portal-searchbox {
+        margin: 65px 17% 15px 17% !important;
+        width: 60%;
+        font-size: 0.7em !important;
+        clear: both !important;
+        float: left !important;
+        }
+    
+    #searchGadget {
+        width: 81%;
+        }
+    .searchform #searchString { width: 211px; }
+    
+    #portal-personaltools {
+       font-size: 70%;
+       }
+
+   /* global navigation needs to reconfigure itself to be vertical */
+  #portal-globalnav {
+        margin-left: 0px !important;
+        }
+                
+    ul#portal-globalnav {
+        padding: 0px;
+        background-color: white !important;
+        background: white !important;
+        width: 100% !important;
+        }
+        
+    ul#portal-globalnav:before { 
+        display: block;
+        margin-top: 20px;
+        font-size: 2em; 
+        }
+         
+    #portal-globalnav {
+        height: auto;
+        clear: both;
+        padding: 0px;
+        margin: 7px auto;
+        width: 100% !important;
+        }
+        
+    #portal-globalnav li {
+        display: list-item !important;
+        margin-top: 5px;
+        border-top: 1px solid #E7E7E7;
+        border-bottom: 1px solid #E7E7E7;
+        background-color: white;
+        width: 100%;
+        }
+   .nav-menu .nav-primary.expanded #portal-globalnav li, .nav-menu .nav-primary #portal-globalnav li.navigation-pulldown { display: list-item !important; }
+   .nav-menu .nav-primary #portal-globalnav li { display: none !important; }
+   #portal-globalnav li.navigation-pulldown {
+       padding: 0.5em 1em 2em;
+       background-color: #E3E3E3;
+       }
+       
+   #portal-globalnav li a {
+        padding: 13px 13px 13px 20px;
+        display: block !important;
+        text-align: left !important;
+        }
+
+
+/* luke w says breadcrumbs are not found in mobile designs */    
+    #portal-breadcrumbs {
+        display: none; 
+        }
+        
+ /* make the content font-size bigger */
+   #content {
+       font-size: 0.9em;
+       } 
+   #content h1 { font-size: 1.4em;}
+   #content h2 { font-size: 1.2em;}
+   div#footer {
+       width: 99%;
+       }   
+
+} /*  * END 600px and below  * */
+
+
+@media (max-width : 486px) {
+    div.row #portal-searchbox {
+    margin: 65px 17% 15px !important;
+    }
+}
+
+/*  *iPad in landscape mode * */
+@media screen and (orientation:landscape) and (max-device-width: 1024px) {
+    body {
+        font: 1em!important;
+    } 
+    #visual-portal-wrapper {
+ 		width: 100% !important;
+ 		margin: 0 !important;
+ 	}
+    #portal-columns {
+       font-size: 1.7em;
+       }
+     #portal-logo a#logo-site { padding-top: 2%;}
+
+}
+
+/*  * iPad in portrait mode * */
+@media screen and (orientation:portrait) and  (max-device-width: 768px) {
+   #visual-portal-wrapper {
+ 		width: 100% !important;
+ 		margin: 0 !important;
+	}
+	#portal-columns {
+       font-size: 1.7em;
+       }
+    #portal-logo a#logo-site { padding-top: 2%;}
+    
+} /*  * END Pad in landscape mode * */
+
+
+
+/*  * iPhone * */
+@media screen and (orientation:landscape) and (max-device-width: 480px), screen and (orientation:portrait) and  (max-device-width: 320px) {
+/** it seems when changing the orientation on the iphone it loses things like globalnav being display block. Have to reset some css that should of been used from before **/
+   body { display: inline !important; }
+   /* global navigation needs to reconfigure itself to be vertical */
+
+     #portal-logo {
+        display: inline-block;
+        } 
+
+     div#logo {
+        position: absolute;
+        top: 15px !important;
+        display: inline-block;
+        }
+   #portal-logo {
+       clear: both !important;
+       margin: 0;
+       display: inline-block;
+       width: 80% !important;
+       }     
+   #portal-logo img { max-width: 300% !important; height: auto;}  
+   #portal-searchbox { margin-top: 75px !important; }     
+   #portal-globalnav { margin-left: 0px !important; }
+                
+   ul#portal-globalnav {
+        padding: 0px;
+        background-color: transparent;
+        width: 100% !important;
+        }
+        
+     ul#portal-globalnav:before { 
+        display: block;
+        margin-top: 20px;
+        font-size: 2em; 
+        }
+        
+    #portal-globalnav {
+        height: auto;
+        clear: both;
+        padding: 0px;
+        margin: 7px auto;
+        width: 100% !important;
+        }
+        
+   #portal-globalnav li {
+        display: inline-block !important; 
+        margin-top: 4px;
+        border-top: 1px solid #E7E7E7;
+        border-bottom: 1px solid #E7E7E7;
+        background-color: white;
+        width: 100%;
+        }
+
+        
+    #portal-globalnav li a {
+        padding: 13px 13px 13px 20px;
+        display: block !important;
+        }
+    
+    .field input[type="text"][size] {
+        width: 10em;
+        } 
+} /*  * END iPhone * */
+
+
+
+
