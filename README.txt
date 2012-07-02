@@ -24,6 +24,7 @@ This Responsive Theme product will give your Plone a responsive theme on install
       <metadata>
          <version>1000</version>
          <dependencies>
-              <dependency>profile-collective.responsivetheme:default</dependency>
+             <dependency>profile-collective.responsivetheme:default</dependency>
          </dependencies>
       </metadata>
+      

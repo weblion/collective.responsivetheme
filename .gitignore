@@ -1,1 +1,3 @@
 collective.responsivetheme.egg-info/
+dist/
+*.pyc
