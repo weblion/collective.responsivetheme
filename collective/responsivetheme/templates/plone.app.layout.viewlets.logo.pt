@@ -3,8 +3,7 @@
 <a id="portal-logo"
    title="Home"
    accesskey="1"
-   tal:attributes="href view/navigation_root_url;
-                   title view/navigation_root_title"
+   tal:attributes="href view/navigation_root_url;"
    i18n:domain="plone"
    i18n:attributes="title">
     <img src="logo.jpg" alt=""

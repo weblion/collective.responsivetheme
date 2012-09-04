@@ -33,30 +33,36 @@ function below_600(){
 }
 
 $(document).ready(function() {
-    // add a div around globalnav
-    $('ul#portal-globalnav').wrap('<div class="nav-primary" />');
-    if ( $(".navigation-button").length == 0 ) {
-        below_600();
+   var isIE8orbelow = $.browser.msie && +$.browser.version <= 8;
+    if ( isIE8orbelow ) {
+        
     }
-    $(window).resize(function() {
-    // if window is smaller than 600px put in the extra li
-    if ($(window).width() <= 600) { 
-         // check to see if we have this particular li.. if not add it
-         if ( $(".navigation-button").length == 0 ) {
-           below_600(); 
-         }
-     } 
-    // if window is bigger take away li
-    if ($(window).width() > 600) {
-         // check and see if .navigation-button is there.. if so remove it
-         if ( $(".navigation-button").length > 0 ) {
-             $('#portal-top').removeClass('nav-menu'); 
-             $('.navigation-button').remove();
-             $('.nav-section').remove();
-         }
+    else {
+         // add a div around globalnav
+        $('ul#portal-globalnav').wrap('<div class="nav-primary" />');
+        if ( $(".navigation-button").length == 0 ) {
+            below_600();
+        }
+        $(window).resize(function() {
+            // if window is smaller than 600px put in the extra li
+            if ($(window).width() <= 600) { 
+                 // check to see if we have this particular li.. if not add it
+                 if ( $(".navigation-button").length == 0 ) {
+                   below_600(); 
+                 }
+             } 
+            // if window is bigger take away li
+            if ($(window).width() > 600) {
+                 // check and see if .navigation-button is there.. if so remove it
+                 if ( $(".navigation-button").length > 0 ) {
+                     $('#portal-top').removeClass('nav-menu'); 
+                     $('.navigation-button').remove();
+                     $('.nav-section').remove();
+                 }
+            }
+
+        });
     }
 
 });
-
-      });
 

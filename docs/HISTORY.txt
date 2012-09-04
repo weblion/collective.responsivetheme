@@ -1,5 +1,12 @@
 Changelog
 =========
+1.2.1 (2012-09-04)
+----------------
+- Fixed an issue where logo.pt was asking for the title
+
+1.2 (2012-08-30)
+----------------
+- Fixed the issue of the navigation folding for IE 8 and below
 
 1.0 (2012-07-02)
 ----------------
