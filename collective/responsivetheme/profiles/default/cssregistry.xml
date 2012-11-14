@@ -9,20 +9,17 @@
     enabled="1" expression=""/>
     
 <stylesheet title=""
-    id="mediaqueries.css"
-    media="" rel="stylesheet" rendering="import"
-    cacheable="True" compression="safe" cookable="True"
-    enabled="1" expression=""/>
-
-<stylesheet title=""
-    id="responsiveIEFixes.css"
-    media="" rel="stylesheet" rendering="import"
-    cacheable="True" compression="safe" cookable="True"
-    enabled="1" expression=""/> 
-    
-<stylesheet title=""
     id="rwd-nav.css"
     media="" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression=""/> 
+
+<!-- mediaqueries.css needs to be rendered as a link instead of @import for respond.js to work with the media queries. 
+Also the media="" allows chrome and safari to work- there would of been a nesting of media="screen" -->
+<stylesheet title=""
+    id="mediaqueries.css"
+    media="" rel="stylesheet" rendering="link"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="" />
+    
 </object>

@@ -1,5 +1,9 @@
 Changelog
 =========
+1.3 (2012-11-15)
+----------------
+- Added Scott Jehl's Respond.js which enables responsive web designs in browsers that don't support CSS3 Media Queries - in particular, Internet Explorer 8 and under. It's written in such a way that it will probably patch support for other non-supporting browsers as well.
+
 1.2.2 (2012-09-04)
 -----------------
 - underline in this history.txt file wasn't long enough. Had to make new version.

@@ -3,6 +3,9 @@
      -->
 
 <object name="portal_javascripts">
+    <javascript id="++resource++collective.responsivetheme.javascripts/respond.src.js"
+       cacheable="True" compression="safe" cookable="False"
+       enabled="True" expression="" inline="False"/>
    <javascript id="++resource++collective.responsivetheme.javascripts/viewportchange.js"
        cacheable="True" compression="safe" cookable="False"
        enabled="True" expression="" inline="False"/>

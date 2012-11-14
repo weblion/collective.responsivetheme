@@ -7,7 +7,7 @@
 /*  * iPhone in portrait mode * */
 
 /*  *  1625px and above huge screens * */
-@media only screen and (min-width : 1625px)  {
+@media screen and (min-width : 1625px)  {
     body { width: 100%;}
     
     /* for readability making the width of the site only got to 100em */ 
@@ -21,14 +21,14 @@
 } /*  *  END 1625px and above huge screens * */
 
 /*  *  800px and below * */
-@media (max-width : 800px) {
+@media screen and (max-width : 800px) {
     div#portal-searchbox {
         margin-right: 10% !important;
     }
 }
 
 /*  * 600px and below-common things for 480px, 600px, and below .. IE 9 ignored this if it had 'only screen' in the query * */
-@media (max-width : 610px) {
+@media screen and (max-width: 610px) {
     /* reset the min width to be 320px */
     body { min-width: 320px !important;}
     #visual-portal-wrapper { width: 100% !important;}
@@ -165,7 +165,7 @@
 } /*  * END 600px and below  * */
 
 
-@media (max-width : 486px) {
+@media screen and (max-width: 486px) {
     div.row #portal-searchbox {
     margin: 65px 17% 15px !important;
     }

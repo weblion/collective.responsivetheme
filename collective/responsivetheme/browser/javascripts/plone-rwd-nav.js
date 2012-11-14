@@ -33,11 +33,6 @@ function below_600(){
 }
 
 $(document).ready(function() {
-   var isIE8orbelow = $.browser.msie && +$.browser.version <= 8;
-    if ( isIE8orbelow ) {
-        
-    }
-    else {
          // add a div around globalnav
         $('ul#portal-globalnav').wrap('<div class="nav-primary" />');
         if ( $(".navigation-button").length == 0 ) {
@@ -62,7 +57,7 @@ $(document).ready(function() {
             }
 
         });
-    }
+   
 
 });
 
