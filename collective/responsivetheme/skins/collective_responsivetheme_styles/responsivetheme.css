@@ -19,6 +19,9 @@ div#footer, #portal-colophon {
     margin-top: 2.3em;
 }
 
+  #logo  { 
+       margin-left: -95%;
+    }
 
 button.navigation-button { 
     width: 98%; 
@@ -30,3 +33,4 @@ button.navigation-button {
     border-radius: 3px;
     border:1px solid #999999;
     }
+    

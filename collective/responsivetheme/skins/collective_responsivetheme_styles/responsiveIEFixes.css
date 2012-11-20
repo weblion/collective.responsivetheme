@@ -1,4 +1,46 @@
-/* body {
-    min-width: 800px; /* need since IE ignores media queries 
-}
+/* css with the asterisk mark is for IE 7 only */
+
+#portal-searchbox { margin-top: 35px !important;}
+
+
+@media screen and (max-width: 610px) {
+
+    #portal-logo { 
+        display: inline-block !important;
+        width: 150% !important;
+        height: 150% !important; 
+        padding-left: 10px;
+        *margin-left: 200px !important; 
+        }
+  
+  
+/*    div#logo.cell a#portal-logo img  {
+        *width: auto !important;
+       
+    }
+    div#logo.cell { 
+        *max-width: 500px !important; 
+        }
 */
+     #portal-column-content, #portal-column-one, #portal-column-two { 
+        *width: 100% !important;
+        }
+        
+    #portal-searchbox {
+        *margin-bottom: 0px !important;
+        *padding-bottom: 0px !important;
+    }
+    
+    #portal-header { 
+        *display: block !important;
+        *float: left !important;
+        }
+    #portal-personaltools-wrapper {
+        *margin-left: -15% !important;
+    }
+    
+        
+    .nav-menu .nav-primary.expanded #portal-globalnav li a {
+        *min-width: 94%;
+    }
+}

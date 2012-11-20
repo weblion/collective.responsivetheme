@@ -21,5 +21,11 @@ Also the media="" allows chrome and safari to work- there would of been a nestin
     media="" rel="stylesheet" rendering="link"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="" />
-    
+   
+<stylesheet title=""
+    id="responsiveIEFixes.css"
+    media="" rel="stylesheet" rendering="link"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="" conditionalcomment="lte IE 8" />
+     
 </object>
