@@ -8,7 +8,7 @@
        enabled="True" expression="" inline="False"/>
    <javascript id="++resource++collective.responsivetheme.javascripts/viewportchange.js"
        cacheable="True" compression="safe" cookable="False"
-       enabled="True" expression="" inline="False"/>
+       enabled="False" expression="" inline="False"/>
    <javascript id="++resource++collective.responsivetheme.javascripts/plone-rwd-nav.js"
        cacheable="True" compression="safe" cookable="False"
        enabled="True" expression="" inline="False"/>

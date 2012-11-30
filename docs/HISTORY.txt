@@ -1,5 +1,9 @@
 Changelog
 =========
+1.3.2 (2012-11-30)
+------------------
+- Made viewportchange.js default to false in the jsregistry.xml since the scaling that was happening was not the viewport itself but gravity of all things after talking to Ethan Marcotte and Luke W.  
+
 1.3.1 (2012-11-20)
 ------------------
 - Some IE 7 and IE 8 fixes
