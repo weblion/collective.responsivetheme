@@ -26,4 +26,14 @@
     <depends name="skins"/>
   </genericsetup:importStep>
 
+  <genericsetup:upgradeStep
+      sortkey="1000"
+      source="1000"
+      destination="1001"
+      title="Installs jarn.jsi18n"
+      description="Installs jarn.jsi18n as a dependency for i18n in JavaScript"
+      profile="collective.responsivetheme:default"
+      handler=".upgrades.v1000_to_v1001"
+    />
+      
 </configure>
