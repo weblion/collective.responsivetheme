@@ -9,9 +9,15 @@
 function below_600(){
       // on load add the li if less than 600 px wide and the nav-menu class
       if(window.location.hash != '#portal-globalnav') {
-        if ($(window).width() < 600) { 
+        if ($(window).width() < 600) {
+            // i18n
+            jarn.i18n.loadCatalog('collective.responsivetheme');
+            _ = jarn.i18n.MessageFactory('collective.responsivetheme');
+            var showNavigationLabel = _('Show Navigation');
+            var hideNavigationLabel = _('Hide Navigation');  
+            
             //$("#portal-globalnav").prepend('<li class="navigation-pulldown">Navigation</li>');
-            $("#portal-globalnav").prepend('<button type="button" class="navigation-button">Show Navigation</button>');
+            $("#portal-globalnav").prepend('<button type="button" class="navigation-button">' + showNavigationLabel + '</button>');
             $('#portal-top').addClass('nav-menu');
             $(".nav-primary").prepend('<span class="nav-section" />');
             // toggle the menu items' visiblity. it gives the parent the class .expanded
@@ -22,10 +28,10 @@ function below_600(){
                $('.nav-primary').toggleClass('expanded');
                }); 
             $("button.navigation-button").toggle(function()  {  
-               $(this).text("Hide Navigation");  
+               $(this).text(hideNavigationLabel);  
                },  
                function() {  
-                $(this).text("Show Navigation"); 
+                $(this).text(showNavigationLabel); 
                }  
                );
         }
