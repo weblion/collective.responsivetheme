@@ -1,0 +1,27 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.responsivetheme 1.0\n"
+"POT-Creation-Date: 2013-07-01 16:31+0000\n"
+"PO-Revision-Date: 2013-07-01 16:36+0100\n"
+"Last-Translator: Jochen Dekeyser <ict@kreaplast.be>\n"
+"Language-Team: kreaplast.be <ict@kreaplast.be>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.responsivetheme\n"
+"X-Poedit-Language: DUTCH\n"
+"X-Poedit-Country: BELGIUM\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+# ./browser/javascripts/plone-rwd-nav.js
+msgid "Show Navigation"
+msgstr "Toon navigatie"
+
+# ./browser/javascripts/plone-rwd-nav.js
+msgid "Hide Navigation"
+msgstr "Verberg navigatie"
+
