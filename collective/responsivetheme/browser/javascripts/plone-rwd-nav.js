@@ -17,23 +17,36 @@ function below_600(){
             var hideNavigationLabel = _('Hide Navigation');  
             
             //$("#portal-globalnav").prepend('<li class="navigation-pulldown">Navigation</li>');
-            $("#portal-globalnav").prepend('<button type="button" class="navigation-button">' + showNavigationLabel + '</button>');
+            
+            // always show right Navigation label for button, even in rare situations: 
+            // e.g. expand the mobile menu, enlarge the browser so the mobile menu disappears, 
+            //      make the browser smaller and see the right label with the expanded menu again
+            var initialNavigationLabel = showNavigationLabel;
+            if ($('.nav-primary').hasClass('expanded')) {
+                   initialNavigationLabel = hideNavigationLabel;
+            }                   
+            $("#portal-globalnav").prepend('<button type="button" class="navigation-button">' + initialNavigationLabel + '</button>');
             $('#portal-top').addClass('nav-menu');
             $(".nav-primary").prepend('<span class="nav-section" />');
             // toggle the menu items' visiblity. it gives the parent the class .expanded
             $('.nav-primary').find('span.nav-section').bind('click focus', function(){
                 $(this).parent().toggleClass('expanded');
+               // always show right Navigation label for button, even in rare situations...               
+                if ($('.nav-primary').hasClass('expanded')) {
+                    $(this).parent().find('button.navigation-button').text(hideNavigationLabel);
+                } else {
+                    $(this).parent().find('button.navigation-button').text(showNavigationLabel); 
+                }                 
                 });
             $('button.navigation-button').bind('click', function() {
                $('.nav-primary').toggleClass('expanded');
-               }); 
-            $("button.navigation-button").toggle(function()  {  
-               $(this).text(hideNavigationLabel);  
-               },  
-               function() {  
-                $(this).text(showNavigationLabel); 
-               }  
-               );
+               // always show right Navigation label for button, even in rare situations...               
+               if ($('.nav-primary').hasClass('expanded')) {
+                   $(this).text(hideNavigationLabel);
+               } else {
+                   $(this).text(showNavigationLabel); 
+               }                 
+               });
         }
      }
 }
