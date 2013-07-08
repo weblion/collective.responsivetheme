@@ -1,5 +1,5 @@
 <div metal:define-macro="portal_logo"
-     tal:attributes="class string:cell width-1:4 position-0" id="logo"> 
+     tal:attributes="class string:cell position-0" id="logo"> 
 <a id="portal-logo"
    title="Home"
    accesskey="1"

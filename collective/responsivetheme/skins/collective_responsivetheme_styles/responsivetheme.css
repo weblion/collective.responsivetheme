@@ -34,3 +34,12 @@ button.navigation-button {
     border:1px solid #999999;
     }
     
+@media screen and (max-width: 610px) {
+    #portal-logo {
+        width: 100%;
+    }
+    
+    #logo {
+        width: 22.75% !important;
+    }
+}
