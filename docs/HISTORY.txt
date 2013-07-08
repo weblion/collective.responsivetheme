@@ -1,5 +1,11 @@
 Changelog
 =========
+1.4 (unreleased)
+----------------
+
+- Nothing changed yet.
+
+
 1.4-colliberty (2013-07-08)
 ---------------------------
 - Made viewportchange.js default to false in the jsregistry.xml since the scaling that was happening was not the viewport itself but gravity of all things after talking to Ethan Marcotte and Luke W.  
