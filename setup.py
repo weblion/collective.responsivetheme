@@ -27,6 +27,7 @@ setup(name='collective.responsivetheme',
           'setuptools',
           'plonetheme.sunburst',
           'z3c.jbot>=0.6.0',
+          'jarn.jsi18n',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
