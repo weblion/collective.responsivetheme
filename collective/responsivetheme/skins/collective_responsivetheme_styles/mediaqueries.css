@@ -41,9 +41,9 @@
        margin-left: 30px;
        display: inline-block;
        clear: both;
-       margin: 0px;}
+       margin: 0px;
+       }
        
-   #portal-logo img { max-width: 300% !important; height: auto;}
     /* make width 100% instead of the stock 97.75% */
     div.width-full {
         width: 100% !important;
@@ -83,7 +83,7 @@
        
     /* move search box to the center and expand its width */   
     #portal-searchbox {
-        margin: 65px 17% 15px 17% !important;
+        margin: 65px 17% 15px 17% !important; /* different from the diazo theme since I can reorder when logo and searchbox come in the html */
         width: 60%;
         font-size: 0.7em !important;
         clear: both !important;
@@ -155,21 +155,41 @@
  /* make the content font-size bigger */
    #content {
        font-size: 0.9em;
+       padding: 1em;
        } 
+   /*#content-core { width: 98%;}*/
    #content h1 { font-size: 1.4em;}
    #content h2 { font-size: 1.2em;}
    div#footer {
        width: 99%;
        }   
+    .LSBox input.searchButton {
+        font-size: 2em;
+    }
+    
+    #searchGadget {
+        font-size: 2em;
+        padding-left: 10px;
+    }
+    
+    input.searchPage {
+        font-size: 1em !important;
+        }
 
+    
+    #LSResult {
+        position: relative;
+        right: inherit;
+        float: left;
+        margin: 0;
+    }
+    
+    div#portal-columns { width: 99%; }
+ 
 } /*  * END 600px and below  * */
 
 
-@media screen and (max-width: 486px) {
-    div.row #portal-searchbox {
-    margin: 65px 17% 15px !important;
-    }
-}
+
 
 /*  *iPad in landscape mode * */
 @media screen and (orientation:landscape) and (max-device-width: 1024px) {
@@ -224,7 +244,7 @@
        width: 80% !important;
        }     
    #portal-logo img { max-width: 300% !important; height: auto;}  
-   #portal-searchbox { margin-top: 75px !important; }     
+    
    #portal-globalnav { margin-left: 0px !important; }
                 
    ul#portal-globalnav {
@@ -265,6 +285,19 @@
     .field input[type="text"][size] {
         width: 10em;
         } 
+ 
+    div#content-core form#searchform.searchPage fieldset#search-field { 
+        width: 100% !important; 
+        padding: 0px;
+        }
+    fieldset#search-field input.searchPage:first-child {
+        width: 50% !important;
+        }
+    input.searchPage.searchButton {
+        width: 45% !important;
+        margin-left: 2px;
+        font-size: 0.05em;
+    }
 } /*  * END iPhone * */
 
 
