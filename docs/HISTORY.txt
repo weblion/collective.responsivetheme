@@ -1,5 +1,11 @@
 Changelog
 =========
+1.4 (Unreleased)
+----------------
+- Added i18n support for the UI: translation for "Show Navigation" and "Hide navigation" in Dutch and French. [kysr]
+
+- Always show correct navigation label in mobile menu [kysr]
+
 1.3.2 (2012-11-30)
 ------------------
 - Made viewportchange.js default to false in the jsregistry.xml since the scaling that was happening was not the viewport itself but gravity of all things after talking to Ethan Marcotte and Luke W.  
