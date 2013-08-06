@@ -4,7 +4,7 @@ Changelog
 ----------------
 - Added i18n support for the UI: translation for "Show Navigation" and "Hide navigation" in Dutch and French. [kysr]
 
-- Always show right navigation label in mobile menu [kysr]
+- Always show correct navigation label in mobile menu [kysr]
 
 1.3.2 (2012-11-30)
 ------------------
