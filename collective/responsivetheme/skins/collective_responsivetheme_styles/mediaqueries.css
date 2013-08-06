@@ -36,7 +36,8 @@
         position: absolute;
         top: 15px !important;
         display: inline-block;
-        }
+        width: 94%;
+        }   
    #portal-logo {
        margin-left: 30px;
        display: inline-block;
@@ -83,7 +84,7 @@
        
     /* move search box to the center and expand its width */   
     #portal-searchbox {
-        margin: 65px 17% 15px 17% !important; /* different from the diazo theme since I can reorder when logo and searchbox come in the html */
+        margin: 65px 17% 15px 17% !important; /* different from the diazo theme since I can reorder when logo and searchbox come in the html. May consider moving to it's own CSS file so I don't have to maintain two products as much */
         width: 60%;
         font-size: 0.7em !important;
         clear: both !important;
@@ -243,7 +244,7 @@
        display: inline-block;
        width: 80% !important;
        }     
-   #portal-logo img { max-width: 300% !important; height: auto;}  
+    
     
    #portal-globalnav { margin-left: 0px !important; }
                 
