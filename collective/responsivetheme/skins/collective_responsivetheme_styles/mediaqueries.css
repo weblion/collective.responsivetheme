@@ -195,7 +195,7 @@
 /*  *iPad in landscape mode * */
 @media screen and (orientation:landscape) and (max-device-width: 1024px) {
     body {
-        font: 1em!important;
+        font: 1em !important;
     } 
     #visual-portal-wrapper {
  		width: 100% !important;

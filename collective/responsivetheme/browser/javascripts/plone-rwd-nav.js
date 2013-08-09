@@ -6,13 +6,10 @@
   Last Updated: April 2012
 */
 
-function below_600(){
-      // on load add the li if less than 600 px wide and the nav-menu class
+function below_610(){
+      // on load add the li if less than 610 px wide and the nav-menu class
       if(window.location.hash != '#portal-globalnav') {
-        if ($(window).width() < 600) {
-            // i18n
-            jarn.i18n.loadCatalog('collective.responsivetheme');
-            _ = jarn.i18n.MessageFactory('collective.responsivetheme');
+        if ($(window).width() < 610) {
             var showNavigationLabel = _('Show Navigation');
             var hideNavigationLabel = _('Hide Navigation');  
             
@@ -52,21 +49,24 @@ function below_600(){
 }
 
 $(document).ready(function() {
+            // i18n
+        jarn.i18n.loadCatalog('collective.responsivetheme');
+        _ = jarn.i18n.MessageFactory('collective.responsivetheme');
          // add a div around globalnav
         $('ul#portal-globalnav').wrap('<div class="nav-primary" />');
         if ( $(".navigation-button").length == 0 ) {
-            below_600();
+            below_610();
         }
         $(window).resize(function() {
-            // if window is smaller than 600px put in the extra li
-            if ($(window).width() <= 600) { 
+            // if window is smaller than 610px put in the extra li
+            if ($(window).width() <= 610) { 
                  // check to see if we have this particular li.. if not add it
                  if ( $(".navigation-button").length == 0 ) {
-                   below_600(); 
+                   below_610(); 
                  }
              } 
             // if window is bigger take away li
-            if ($(window).width() > 600) {
+            if ($(window).width() > 610) {
                  // check and see if .navigation-button is there.. if so remove it
                  if ( $(".navigation-button").length > 0 ) {
                      $('#portal-top').removeClass('nav-menu'); 

@@ -1,6 +1,6 @@
 Changelog
 =========
-1.4 (Unreleased)
+1.4 (2012-08-06)
 ----------------
 - Added i18n support for the UI: translation for "Show Navigation" and "Hide navigation" in Dutch and French. [kysr]
 
