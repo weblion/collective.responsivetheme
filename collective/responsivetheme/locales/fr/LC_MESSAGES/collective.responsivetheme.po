@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: plonetheme.diazo_responsivetheme 1.0\n"
+"Project-Id-Version: collective.responsivetheme 1.0\n"
 "POT-Creation-Date: 2013-07-01 16:31+0000\n"
 "PO-Revision-Date: 2013-07-01 16:38+0100\n"
 "Last-Translator: Jochen Dekeyser <ict@kreaplast.be>\n"
@@ -12,16 +12,15 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: plonetheme.diazo_responsivetheme\n"
+"Domain: collective.responsivetheme\n"
 "X-Poedit-Language: DUTCH\n"
 "X-Poedit-Country: BELGIUM\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-# ++resource++jsi18n.js
+# ./browser/javascripts/plone-rwd-nav.js
 msgid "Show Navigation"
 msgstr "Montrer la navigation"
 
-# ++resource++jsi18n.js
+# ./browser/javascripts/plone-rwd-nav.js
 msgid "Hide Navigation"
 msgstr "Cacher la navigation"
-

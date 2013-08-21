@@ -1,10 +1,14 @@
 Changelog
 =========
-1.5.1 (2012-08-20)
+1.5.2 (2013-08-21)
+------------------
+- Renamed the french file to be collective.responsivetheme
+
+1.5.1 (2013-08-20)
 ------------------
 - Somehow the french language didn't go up to the server. This fixes that problem
 
-1.4 (2012-08-06)
+1.4 (2013-08-06)
 ----------------
 - Added i18n support for the UI: translation for "Show Navigation" and "Hide navigation" in Dutch and French. [kysr]
 
